@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create User</title>
+</head>
+<body>
+        <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+        <h1>Create User</h1>
+        <hr>
+        <fieldset>
+        <legend>User Form</legend>
+            <label>Username:-</label>
+            <input type="text" name="username" size="30" maxlength="12" placeholder="username">
+            <label for="Password">Password:</label>
+            <input type="password" name="password"  size="30" maxlength="8"  placeholder="password">
+        </fieldset>    
+        <fieldset>
+            <label>Superheroes</label>
+            <p>Select your favourite superheroe</p>
+            <input type="radio" name="superheroes" value="superman"> Superman
+            <input type="radio" name="superheroes" value="batman"> Batman
+            <input type="radio" name="superheroes" value="wonderwoman" checked> Wonder Woman
+            <input type="radio" name="superheroes" value="Flash"> Flash
+            <input type="radio" name="superheroes" value="Thor"> Thor
+            <input type="radio" name="superheroes" value="Hulk"> Hulk
+        </fieldset>
+        <fieldset>
+            <label>Videogames</label>
+            <p>Select your favourite video game</p>
+            <input type="checkbox" name="videogames" value="Fifa" checked> Fifa
+            <input type="checkbox" name="videogames" value="NHL"> NHL
+            <input type="checkbox" name="videogames" value="Resident evil"> Resident Evil
+            <input type="checkbox" name="videogames" value="Uncharted" checked> Uncharted
+        </fieldset>
+        <input type="hidden" name="user-id" value="2300" >
+        <input type="image" name="login" src="img/register_button.jpeg" height="100" width="100">
+    </form>
+</body>
+</html>
