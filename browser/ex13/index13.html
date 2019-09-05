@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function () {
+            const inutSeconds = prompt('Number of seconds you want to stay in sit');
+            let contSecond = inutSeconds;
+            const sessionTimer = inutSeconds * 1000;
+            const timer = function() {
+                contSecond--;
+                if (contSecond === 0) {
+                    clearInterval(id);
+                    console.log('Your session has expired, come again soon!');
+                }else{
+                    console.log(`${contSecond} Seconds`);                
+                }                
+            }
+            const id = setInterval(timer, sessionTimer);
+        }        
+        
+    </script>
+   
+</head>
+<body>
+   
+</body>
+</html>
